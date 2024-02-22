@@ -35,12 +35,6 @@ class Kowalski {
     }
 
 
-    @SubscribeEvent
-    fun cancelMessages(event: ClientChatReceivedEvent) {
-        if (event.message.unformattedText.contains("verboten"))
-            event.isCanceled = true
-    }
-
     @Mod.EventHandler
     fun init(event: FMLInitializationEvent) {
         ClientCommandHandler.instance.registerCommand(KowalskiCommand)

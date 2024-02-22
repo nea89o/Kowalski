@@ -35,6 +35,7 @@ public class EventClassTransformer implements IClassTransformer {
                 continue;
             }
             method.instructions.insert(insn, buildCallKowalski());
+            break;
         }
     }
 

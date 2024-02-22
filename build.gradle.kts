@@ -30,7 +30,6 @@ loom {
             // If you don't want mixins, remove these lines
             property("mixin.debug", "true")
             property("asmhelper.verbose", "true")
-            arg("--tweakClass", "org.spongepowered.asm.launch.MixinTweaker")
             arg("--tweakClass", "moe.nea.kowalski.init.KowalskiTweaker")
         }
     }
@@ -108,7 +107,7 @@ tasks.withType(Jar::class) {
         this["ForceLoadAsMod"] = "true"
 
         // If you don't want mixins, remove these lines
-        this["TweakClass"] = "org.spongepowered.asm.launch.MixinTweaker"
+        this["TweakClass"] = "moe.nea.kowalski.init.KowalskiTweaker"
         this["MixinConfigs"] = "mixins.$modid.json"
     }
 }
