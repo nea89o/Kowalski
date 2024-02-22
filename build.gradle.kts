@@ -31,6 +31,7 @@ loom {
             property("mixin.debug", "true")
             property("asmhelper.verbose", "true")
             arg("--tweakClass", "org.spongepowered.asm.launch.MixinTweaker")
+            arg("--tweakClass", "moe.nea.kowalski.init.KowalskiTweaker")
         }
     }
     runConfigs {
